@@ -1,10 +1,10 @@
 "use client";
+import { useState } from "react";
 import { useFormik } from "formik";
+import { useRouter } from "next/navigation";
 import * as Yup from "yup";
 import PhoneInput from "react-phone-input-2";
-import { useState } from "react";
 import { createTask } from "@/helpers/task";
-import { useRouter } from "next/navigation";
 
 export const FormContact = () => {
   const router = useRouter();
@@ -132,7 +132,7 @@ export const FormContact = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.subject}
-          placeholder={"Enter the subject"}
+          placeholder={"Type the subject"}
           className={
             " shadow appearance-none border border-jordy-blue-500  rounded w-full py-3 px-3 text-gray-700 bg-gray-300 focus:bg-jordy-blue-200 focus:outline-none focus:ring-1 focus:jordy-blue-500 transition ease-in-out duration-150 "
           }
@@ -149,6 +149,7 @@ export const FormContact = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.message}
+          placeholder={"Type the message"}
           className={
             " shadow appearance-none border border-jordy-blue-500  rounded w-full pb-20 px-3 text-gray-700 bg-gray-300 focus:bg-jordy-blue-200 focus:outline-none focus:ring-1 focus:jordy-blue-500 transition ease-in-out duration-150 "
           }
@@ -168,4 +169,3 @@ export const FormContact = () => {
     </form>
   );
 };
-

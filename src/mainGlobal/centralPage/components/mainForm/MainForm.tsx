@@ -53,7 +53,7 @@ export const MainForm = () => {
         <div className="text-center text-white text-1xl">
           hello@jrglobalservice.net.com
         </div>
-        <div className="text-center text-white text-1xl">615-947-0623</div>
+        <div className="text-center text-white text-1xl">629-729-00-37</div>
       </div>
       <div className="mb-4 text-jordy-blue-100">
         <label htmlFor="name" className="block ">
@@ -133,7 +133,7 @@ export const MainForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.subject}
-          placeholder={"Enter the subject"}
+          placeholder={"Type the subject"}
           className={
             " shadow appearance-none border border-jordy-blue-50  rounded w-full py-3 px-3 text-jordy-blue-200 bg-jordy-blue-600 focus:bg-jordy-blue-700 focus:outline-none focus:ring-1 transition ease-in-out duration-150"
           }
@@ -150,6 +150,7 @@ export const MainForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.message}
+          placeholder={"Type the message"}
           className={
             " shadow appearance-none border border-jordy-blue-50  rounded w-full pb-20 px-3 text-jordy-blue-200 bg-jordy-blue-600 focus:bg-jordy-blue-700 focus:outline-none focus:ring-1 transition ease-in-out duration-150"
           }
@@ -170,4 +171,3 @@ export const MainForm = () => {
     </form>
   );
 };
-
