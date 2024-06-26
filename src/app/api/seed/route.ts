@@ -6,7 +6,7 @@ import bcryptjs from 'bcryptjs';
 
 
 export async function GET(request: Request) { 
-   await  prisma.user.deleteMany();
+
    await prisma.user.createMany({
     
    data:[
