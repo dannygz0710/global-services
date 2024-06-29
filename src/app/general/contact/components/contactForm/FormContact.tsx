@@ -14,19 +14,18 @@ export const FormContact = () => {
     initialValues: {
       name: "",
       address: "",
-      email: "",
+      userEmail: "",
       phone: "",
       subject: "",
       message: "",
     },
     validationSchema: Yup.object({
-      email: Yup.string().email("Invalid email address"),
       name: Yup.string().required("Required*"),
       phone: Yup.string().required("Required*"),
     }),
     onSubmit: (values, { resetForm }) => {
       createTask(values);
-
+      console.log(values)
       if (Object.keys(values).length > 0) {
         setSuccessMessage("Form submitted successfully!");
         resetForm();
@@ -88,21 +87,19 @@ export const FormContact = () => {
           }
           placeholder={"Enter your address"}
         />
-        {formik.touched.email && formik.errors.email ? (
-          <div className="text-red-500 text-sm">{formik.errors.email}</div>
-        ) : null}
+  
       </div>
       <div className="mb-4 text-jordy-blue-800">
-        <label htmlFor="email" className="block ">
+        <label htmlFor="userEmail" className="block ">
           Email
         </label>
         <input
-          id="email"
-          name="email"
+          id="userEmail"
+          name="userEmail"
           type="email"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.email}
+          value={formik.values.userEmail}
           placeholder={"Enter your email"}
           className={
             " shadow appearance-none border border-jordy-blue-500  rounded w-full py-3 px-3 text-gray-700 bg-gray-300 focus:bg-jordy-blue-200 focus:outline-none focus:ring-1 focus:jordy-blue-500 transition ease-in-out duration-150 "

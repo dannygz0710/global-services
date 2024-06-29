@@ -24,7 +24,7 @@ export default async function getElemntPage({ params }: Props) {
               </div>
               <div className="mb-8">
                 <p className="flex justify-between text-jordy-blue-900 font-bold mb-2 text-xl ">
-                  Email: <span>{find?.email}</span>
+                  Email: <span>{find?.userEmail}</span>
                 </p>
               </div>
               <div className="mb-8">

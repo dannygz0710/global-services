@@ -6,16 +6,16 @@ interface Props {
   phone: string;
   subject: string;
   message: string;
-  email: string;
+  userEmail: string;
 }
 
 
 export const createTask = async (values: Props) => {
-  const { name, address, email, phone, subject, message } = values;
+  const { name, address, userEmail, phone, subject, message } = values;
 
   const todo = await fetch(`/api/api-tasks`, {
     method: "POST",
-    body: JSON.stringify({ name, address, email, phone, subject, message }),
+    body: JSON.stringify({ name, address, userEmail, phone, subject, message }),
     headers: {
       "Content-Type": "application/json",
     },
