@@ -5,6 +5,7 @@ import { TogleButton } from "./components/TogleButton";
 import { MobileNavigation } from "./components/MobileNavigation";
 import Image from "next/image";
 
+
 const navItems = [
   { path: "/", label: "Home" },
   { path: "/general/about", label: "About" },
@@ -16,7 +17,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <main>
-      <nav className="bg-jordy-blue-50 p-5  ">
+      <nav className="bg-jordy-blue-50 p-5 ">
         <div className=" mx-auto">
           <div className="flex items-center justify-between">
             {/* <!-- Logo or Branding --> */}

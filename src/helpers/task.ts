@@ -1,5 +1,3 @@
-
-
 interface Props {
   name: string;
   address: string;
@@ -8,7 +6,6 @@ interface Props {
   message: string;
   userEmail: string;
 }
-
 
 export const createTask = async (values: Props) => {
   const { name, address, userEmail, phone, subject, message } = values;
@@ -23,18 +20,18 @@ export const createTask = async (values: Props) => {
   return todo;
 };
 
-
 export const deleteTodo = async (userId: string): Promise<boolean> => {
   const todo = await fetch(`http://localhost:3000/api/api-tasks/${userId}`, {
     method: "DELETE",
     headers: {
-      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": origin || "*",
+      "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
     },
   }).then((res) => res.json());
 
   return true;
 };
-
 
 export const updateTask = async (
   id: string,
@@ -53,12 +50,13 @@ export const updateTask = async (
   return todo;
 };
 
-
 export const deleteAllTasks = async (complete: any): Promise<boolean> => {
   const todo = await fetch(`http://localhost:3000/api/api-tasks`, {
     method: "DELETE",
     headers: {
-      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": origin || "*",
+      "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
     },
   }).then((res) => res.json());
 

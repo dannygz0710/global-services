@@ -38,7 +38,7 @@ export const FormContact = () => {
   });
 
   return (
-    <form className="bg-jordy-blue-100 p-20" onSubmit={formik.handleSubmit}>
+    <form className="bg-jordy-blue-100 p-5 py-20 lg:p-20" onSubmit={formik.handleSubmit}>
       <div className="mb-20">
         <div className="text-center text-jordy-blue-800 text-4xl">
           Get a Free Quote Now
