@@ -17,11 +17,11 @@ export default function AboutPage() {
           height={60}
         />
         <div>
-          <h1 className="text-jordy-blue-600 text-center mb-10  text-4xl pt-10">
+          <h1 className="text-jordy-blue-600 text-center   text-4xl pt-5">
             Know Us
           </h1>
-          <div className="flex flex-col justify-center text-jordy-blue-900 text-center text-xl mt-5 container mx-5 ">
-            <p className="my-20">
+          <div className=" text-jordy-blue-900  text-xl mt-5 p-10 text-center">
+            <p className="mb-20">
               We are <strong>Josber and raul</strong>, two friends unites by a
               bold vision and commitment to excellence. We began our journey
               working at a vehicle cleaning company, where we learned the

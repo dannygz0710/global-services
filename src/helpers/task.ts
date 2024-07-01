@@ -21,12 +21,10 @@ export const createTask = async (values: Props) => {
 };
 
 export const deleteTodo = async (userId: string): Promise<boolean> => {
-  const todo = await fetch(`http://localhost:3000/api/api-tasks/${userId}`, {
+  const todo = await fetch(`/api/api-tasks/${userId}`, {
     method: "DELETE",
     headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-      "Access-Control-Allow-Headers": "Content-Type",
+   "Content-Type": "application/json",
     },
   }).then((res) => res.json());
 
@@ -43,7 +41,7 @@ export const updateTask = async (
     method: "PUT",
     body: JSON.stringify(body),
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/json", 
     },
   }).then((res) => res.json());
 
@@ -51,12 +49,10 @@ export const updateTask = async (
 };
 
 export const deleteAllTasks = async (complete: any): Promise<boolean> => {
-  const todo = await fetch(`http://localhost:3000/api/api-tasks`, {
+  const todo = await fetch(`/api/api-tasks`, {
     method: "DELETE",
     headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-      "Access-Control-Allow-Headers": "Content-Type",
+      "Content-Type": "application/json",
     },
   }).then((res) => res.json());
 
