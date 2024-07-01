@@ -24,9 +24,9 @@ export const deleteTodo = async (userId: string): Promise<boolean> => {
   const todo = await fetch(`http://localhost:3000/api/api-tasks/${userId}`, {
     method: "DELETE",
     headers: {
-      "Access-Control-Allow-Origin": origin || "*",
+      "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      "Access-Control-Allow-Headers": "Content-Type",
     },
   }).then((res) => res.json());
 
@@ -54,9 +54,9 @@ export const deleteAllTasks = async (complete: any): Promise<boolean> => {
   const todo = await fetch(`http://localhost:3000/api/api-tasks`, {
     method: "DELETE",
     headers: {
-      "Access-Control-Allow-Origin": origin || "*",
+      "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-      "Access-Control-Allow-Headers": "Content-Type, Authorization",
+      "Access-Control-Allow-Headers": "Content-Type",
     },
   }).then((res) => res.json());
 
