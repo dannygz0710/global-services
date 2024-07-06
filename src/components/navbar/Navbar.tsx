@@ -4,6 +4,8 @@ import { NavItem } from "./components/NavItem";
 import { TogleButton } from "./components/TogleButton";
 import { MobileNavigation } from "./components/MobileNavigation";
 import Image from "next/image";
+import "animate.css";
+
 
 
 const navItems = [
@@ -17,18 +19,17 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <main>
-      <nav className="bg-jordy-blue-50 p-5 ">
-        <div className=" mx-auto">
-          <div className="flex items-center justify-between">
+      <nav className="bg-jordy-blue-50 p-5  animate__animated animate__fadeIn">
+        <div className=" mx-auto animate__animated animate__fadeIn">
+          <div className="flex items-center justify-between animate__animated animate__fadeIn">
             {/* <!-- Logo or Branding --> */}
             <div style={{ maxWidth: "75px", height: "auto" }}>
               <Image
                 src="/assets/thumbnail.png"
                 alt="Thumbnail"
                 priority
-                width={900} // Original width of the image
-                height={475} // Original height of the image
-                className="object-cover"
+                width={900} 
+                height={475} 
               />
             </div>
 

@@ -11,7 +11,7 @@ export const TogleButton = ({ setIsOpen, isOpen }: Props) => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         type="button"
-        className="text-jordy-blue-400 hover:text-jordy-blue-600 focus:outline-none focus:text-gray-900"
+        className="text-jordy-blue-400 hover:text-jordy-blue-600 focus:outline-none "
         aria-controls="mobile-menu"
         aria-expanded={isOpen}
       >

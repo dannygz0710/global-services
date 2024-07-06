@@ -39,7 +39,7 @@ export const MainForm = () => {
 
   return (
     <form
-      className="bg-jordy-blue-600 py-20 p-5 md:p-20"
+      className="bg-jordy-blue-600 py-20 px-6 md:p-20"
       onSubmit={formik.handleSubmit}
     >
       <div className="mb-20 ">

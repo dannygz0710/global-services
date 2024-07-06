@@ -3,7 +3,7 @@ import { HandlerButton } from "./HandlerButton";
 
 const MainPage = () => {
   return (
-    <main className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
+    <main className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
       <div className="bg-jordy-blue-100 p-8 ">
         <div className="flex flex-col justify-center gap-5  flex-wrap mt-20">
           <h1 className="text-5xl text-jordy-blue-600  text-center gap-1 ">

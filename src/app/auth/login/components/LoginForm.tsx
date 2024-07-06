@@ -12,12 +12,13 @@ interface Props {
 
 export const LoginForm = () => {
   const [errorMessage, dispatch] = useFormState(authenticate, undefined);
-
+  console.log(errorMessage);
   useEffect(() => {
     if (errorMessage === "Success") {
       window.location.replace("/admin");
     }
   }, [errorMessage]);
+  
 
   return (
     <form
@@ -58,12 +59,17 @@ export const LoginForm = () => {
           aria-live="polite"
           aria-atomic="true"
         >
-          {errorMessage && (
+          {errorMessage === "invalidCredentials" ? 
             <>
               <IoInformationCircle className="h-5  text-danger" />
-              <p className="text-sm text-danger">Invalid Credentials</p>
+              <p className="text-sm text-danger">{errorMessage}</p>
             </>
-          )}
+            : errorMessage === "Success" && <>
+              <IoInformationCircle className="h-5  text-success" />
+              <p className="text-sm text-success">{errorMessage}</p>
+            </> 
+            
+          }
         </div>
       </div>
     </form>

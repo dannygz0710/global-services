@@ -14,6 +14,7 @@ module.exports = {
       current: 'currentColor',
       'white': '#ffffff',
       'danger': 'rgb(239 68 68)',
+      'success': 'rgb(6,124,29)',
       'danger2': 'rgb(185 28 28)',
       'jordy-blue': {
     '50': '#f4f6fb',

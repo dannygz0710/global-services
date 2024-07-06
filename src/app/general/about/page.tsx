@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div className="bg-jordy-blue-100 lg:py-[150px] animate__animated animate__fadeIn">
       <div className="justify-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:container mx-auto ">
         <Image
-          src="/assets/josberedward.jpg"
+          src="/assets/figma.png"
           alt="karolina"
           width={1200}
           height={60}
