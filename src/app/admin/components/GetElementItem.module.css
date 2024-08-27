@@ -1,0 +1,10 @@
+
+
+
+.userDone {
+  @apply font-black bg-jordy-blue-100 rounded-lg shadow-sm p-5 my-5 border border-jordy-blue-200 flex flex-col  justify-between  ;
+}
+
+.userPending {
+  @apply  bg-white rounded-lg shadow-md p-5 border-jordy-blue-50 my-5 border-2 ;
+}

@@ -1,0 +1,13 @@
+
+
+.img{
+    @media (min-width: 700px) {
+    background-image: 
+    linear-gradient(rgba(7, 24, 28, 0), rgba(175, 157, 157, 0.034)),
+    url('../../../../../public/assets/nashville.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    }
+
+}
