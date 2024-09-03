@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import * as Yup from "yup";
 import PhoneInput from "react-phone-input-2";
 import { createTask } from "@/helpers/task";
+import { titleFont } from "@/config/fonts";
 
 export const FormContact = () => {
   const router = useRouter();
@@ -40,9 +41,9 @@ export const FormContact = () => {
   return (
     <form className="bg-jordy-blue-100 p-5 py-20 lg:p-20" onSubmit={formik.handleSubmit}>
       <div className="mb-20">
-        <div className="text-center text-jordy-blue-800 text-4xl">
+        <h1 className={`${titleFont} text-center text-jordy-blue-800 text-4xl`}>
           Get a Free Quote Now
-        </div>
+        </h1>
         <div className="text-center text-jordy-blue-800 text-1xl">
           Nashville, Tennessee
         </div>

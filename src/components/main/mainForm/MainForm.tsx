@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import { useState } from "react";
 import { createTask } from "@/helpers/task";
 import { useRouter } from "next/navigation";
+import { titleFont } from "@/config/fonts";
 
 export const MainForm = () => {
   const router = useRouter();
@@ -43,9 +44,9 @@ export const MainForm = () => {
       onSubmit={formik.handleSubmit}
     >
       <div className="mb-20 ">
-        <div className="text-center text-white text-4xl">
+        <h1 className={` ${titleFont} text-center text-white text-4xl`}>
           Get a Free Quote Now
-        </div>
+        </h1>
         <div className="text-center text-white text-1xl">
           Nashville, Tennessee
         </div>

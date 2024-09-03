@@ -1,10 +1,11 @@
 import Image from "next/image";
 import styles from "./MoreAboutUs.module.css";
 import { ButtonMoreAbout } from "./ButtonMoreAbout";
+import { titleFont } from "@/config/fonts";
 
 export const MoreAboutUs = () => {
   return (
-    <section className="justify-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:container mx-auto lg:my-20 shadow-md">
+    <section className="justify-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:container mx-auto lg:my-20 shadow-md ">
       <div className={styles.hideMobile}>
         <Image
           width={900}
@@ -23,7 +24,7 @@ export const MoreAboutUs = () => {
       
       "
         >
-          <h1 className="text-jordy-blue-50 text-center gap-1  text-5xl ">
+          <h1 className={`${titleFont} text-jordy-blue-50 text-center gap-1  text-5xl`}>
             More About Us
           </h1>
           <h2 className=" text-jordy-blue-200 text-center mt-5">

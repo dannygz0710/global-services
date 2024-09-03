@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 import { deleteTodo } from '@/helpers/task'
 import { IoTrashOutline } from 'react-icons/io5'
 
-export const Button = ({userId}:any) => {
+export const DeleteButton = ({userId}:any) => {
 
   const router = useRouter(); 
 

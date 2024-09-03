@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat, Roboto } from "next/font/google";
-import "./globals.css";
+import "../../globals.css"
 import { Navbar } from "@/components/navbar/Navbar";
 import { Footer } from "@/components/Footer";
+import { inter } from "@/config/fonts";
 
 
 
 
 
 
-const roboto = Montserrat({
-  weight: '400', subsets: ['latin'], })
+
 
 export const metadata: Metadata = {
   title: "Home Page",
@@ -24,8 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-         <div className="min-h-screen">
+      <body className={inter.className}>
+         <div className="min-h-screen bg-jordy-blue-25">
          <Navbar />
         {children}
        <Footer />

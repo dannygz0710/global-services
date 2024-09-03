@@ -47,7 +47,6 @@ export async function POST(request: Request) {
   try {
     const { address, userEmail, message, name, phone , subject } = await postSchema.validate( await request.json() );
     const todo = await prisma.form.create({ data:{ address, userEmail, message, name, phone, subject}});
-    console.log(todo)
     return NextResponse.json(todo);
     
   } catch (error) {

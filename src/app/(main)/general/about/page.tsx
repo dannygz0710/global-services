@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "animate.css";
+import { titleFont } from "@/config/fonts";
 
 export const metadata = {
   title: "About",
@@ -17,7 +18,7 @@ export default function AboutPage() {
           height={60}
         />
         <div>
-          <h1 className="text-jordy-blue-600 text-center   text-4xl pt-5">
+          <h1 className={`${titleFont} text-jordy-blue-600 text-center   text-4xl pt-5`}>
             Know Us
           </h1>
           <div className=" text-jordy-blue-900  text-xl mt-5 p-10 text-center">

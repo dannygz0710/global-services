@@ -24,7 +24,7 @@ export const GetElementItem = ({ user }: Props) => {
       className={user.complete ? styles.userDone : styles.userPending}
     >
       <Link href={`/admin/${user.id}`}>
-        <div className="flex justify-around gap-20 text-jordy-blue-900">
+        <div className="flex justify-around gap-20 text-jordy-blue-800">
           <h3 className="capitalize">
             <span>Name: </span>
             {user.name}

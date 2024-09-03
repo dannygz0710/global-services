@@ -2,7 +2,7 @@
 
 
 .userDone {
-  @apply font-black bg-jordy-blue-100 rounded-lg shadow-sm p-5 my-5 border border-jordy-blue-200 flex flex-col  justify-between  ;
+  @apply font-semibold bg-jordy-blue-100 rounded-lg shadow-sm p-5 my-5 border border-jordy-blue-200 flex flex-col  justify-between  ;
 }
 
 .userPending {

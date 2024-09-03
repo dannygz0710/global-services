@@ -1,5 +1,5 @@
 import prisma from "@/lib/prisma";
-import { Button } from "../components/Button";
+import { DeleteButton } from "../components/DeleteButton";
 import { GoBackButton } from "../components/GoBackButton";
 import "animate.css";
 
@@ -18,28 +18,28 @@ export default async function getElemntPage({ params }: Props) {
           <div className="max-w-md mx-auto bg-white rounded-md lg:shadow-md overflow-hidden">
             <div className="p-10">
               <div className="mb-8">
-                <p className="flex justify-between text-jordy-blue-900 font-bold mb-2 text-xl ">
+                <p className="flex justify-between text-jordy-blue-600 font-semibold mb-2 text-xl ">
                   Name: <span>{find?.name}</span>
                 </p>
               </div>
               <div className="mb-8">
-                <p className="flex justify-between text-jordy-blue-900 font-bold mb-2 text-xl ">
+                <p className="flex justify-between text-jordy-blue-600 font-semibold mb-2 text-xl ">
                   Email: <span>{find?.userEmail}</span>
                 </p>
               </div>
               <div className="mb-8">
-                <p className="flex justify-between text-jordy-blue-900 font-bold mb-2 text-xl ">
+                <p className="flex justify-between text-jordy-blue-600 font-semibold mb-2 text-xl ">
                   Phone: <span>{find?.phone}</span>
                 </p>
               </div>
               <div className="mb-8">
-                <p className="flex justify-between text-jordy-blue-900 font-bold mb-2 text-xl ">
+                <p className="flex justify-between text-jordy-blue-600 font-semibold mb-2 text-xl ">
                   Subject: <span>{find?.subject}</span>
                 </p>
               </div>
 
               <div className="mb-4">
-                <p className="text-jordy-blue-800 font-bold mb-2 text-xl">
+                <p className="text-jordy-blue-600 font-semibold mb-2 text-xl">
                   Message:
                 </p>
                 <p className=" shadow appearance-none border border-jordy-blue-50  rounded w-full pb-20 px-3 text-jordy-blue-800  focus:outline-none focus:ring-1 transition ease-in-out duration-150">
@@ -48,7 +48,7 @@ export default async function getElemntPage({ params }: Props) {
               </div>
               <div className="flex justify-between">
                 <GoBackButton />
-                <Button userId={find.id} />
+                <DeleteButton userId={find.id} />
               </div>
             </div>
           </div>
